@@ -1,5 +1,5 @@
 proc import out = digits
-datafile = "C:/Users/lynet/OneDrive/Desktop/optdigits.tra"
+datafile = ".../optdigits.tra"
 dbms = csv replace;
 getnames = no;
 run;
@@ -30,7 +30,7 @@ run;
 
 proc hp4score data=test;
 id var65;
-score file='C:/Users/lynet/OneDrive/Desktop/DIRECTEDSTUDIES/random_forest.bin'
+score file='.../random_forest.bin'
 out=predicted;
 run;
 
@@ -46,7 +46,7 @@ quit;
 
 /* WITH HANDWRITTEN DIGITS */
 proc import out = hdigits
-datafile = "C:/Users/lynet/OneDrive/Desktop/DIRECTEDSTUDIES/handwritten_digits.csv"
+datafile = ".../handwritten_digits.csv"
 dbms = csv replace;
 getnames = no;
 run;
